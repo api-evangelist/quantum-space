@@ -1,16 +1,35 @@
 aid: quantum-space
 name: Quantum Space
-description: 'Quantum Space is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Quantum Space is a space defense and orbital mobility company headquartered
+  in Rockville, Maryland, building Ranger — a maneuverable spacecraft designed to operate
+  across LEO, MEO, GEO and cislunar orbits. Per the company''s own published material,
+  Ranger carries up to 4,000 kg of storable propellant, uses multi-mode chemical and
+  electric propulsion for up to 12 km/s of delta-V, is designed for a 15-year on-station
+  operational life, supports on-orbit refueling in both directions, and exposes a modular
+  five-port payload architecture. The company sells space domain awareness, satellite
+  servicing, satellite life extension and on-orbit refueling to national security, civil
+  and commercial customers, with engineering in Rockville, propulsion and integration
+  in Hawthorne, California and Huntsville, Alabama, and spacecraft production in Tulsa,
+  Oklahoma. Leadership includes CEO Jim Bridenstine (former NASA Administrator), Executive
+  Chairman Kam Ghaffarian and President Kerry Wisnosky. Quantum Space publishes no public
+  developer program, API reference or machine-readable API contract; the only machine-readable
+  artifact served from its own hosts is an llms.txt at the website root.'
+image: https://cdn.prod.website-files.com/69f390c049b974c2b472c40d/69f80fb70fcbd647826bf04b_1200x630%20Quantum.png
 url: https://raw.githubusercontent.com/api-evangelist/quantum-space/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-26'
 modified: '2026-08-26'
 tags:
+- Space
+- Aerospace
+- Defense
+- Satellites
+- Spacecraft
+- Orbital Mobility
+- National Security
+- Space Domain Awareness
 - Company
 apis: []
 maintainers:
@@ -19,5 +38,42 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/quantum-space-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.quantumspaceinc.com/
+- type: About
+  url: https://www.quantumspaceinc.com/about
+- type: Contact
+  url: https://www.quantumspaceinc.com/contact
+- type: Blog
+  url: https://www.quantumspaceinc.com/updates
+- type: Careers
+  url: https://job-boards.greenhouse.io/quantumspacellc
+- type: Investors
+  url: https://investors.quantumspace.us/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/quantumspace-us
+- type: LLMsTxt
+  url: llms/quantum-space-llms.txt
+x-enrichment:
+  date: '2026-08-26'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Quantum Space manufactures Ranger spacecraft and sells missions through defense contract
+    vehicles, so there is no product an API could front — every OpenAPI, GraphQL, MCP and
+    /.well-known/ probe on both of its hosts returned 404 and its api./docs./developer.
+    subdomains are NXDOMAIN.
+  evidence:
+  - url: https://www.quantumspaceinc.com/openapi.json
+    status: 404
+  - url: https://www.quantumspaceinc.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.quantumspaceinc.com/llms.txt
+    status: 200
+  checked: '2026-08-26'

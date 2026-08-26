@@ -1,0 +1,41 @@
+# Quantum Space
+
+> Quantum Space is a space defense and orbital mobility company. It is not a quantum computing company. Its Ranger platform is a maneuverable spacecraft designed to operate across LEO, MEO, GEO, and cislunar orbits, serving national security, civil, and commercial customers.
+
+Key facts about Ranger:
+- Up to 4,000 kg of storable propellant
+- Multi-mode (chemical and electric) propulsion
+- Up to 12 km/s max delta-V
+- Designed for a 15-year on-station operational life
+- Supports on-orbit refueling, both giving and receiving fuel
+- Modular payload architecture (5 mission-configurable ports)
+
+Quantum Space is headquartered in Rockville, Maryland, with manufacturing in Hawthorne, California; integration in Huntsville, Alabama; and production in Tulsa, Oklahoma. Leadership includes Jim Bridenstine (CEO, former NASA Administrator), Dr. Kam Ghaffarian (Executive Chairman & Co-founder), and Kerry Wisnosky (President & Co-founder). The company's first spacecraft, a Scout satellite, launched in May 2024. The first Ranger mission, Ranger Prime, is scheduled no earlier than Q2 2027.
+
+## Company
+
+- [About](https://www.quantumspaceinc.com/about): Leadership team, operating team, and company locations
+- [Careers](https://job-boards.greenhouse.io/quantumspacellc): Open roles across propulsion, avionics, mission operations, software, and business development
+- [Contact](https://www.quantumspaceinc.com/contact): Partner inquiries for program managers, primes, and strategic partners
+
+## Investor Relations
+
+- [Investor overview](https://investors.quantumspaceinc.com/#overview): Investor relations overview
+- [Investor news](https://investors.quantumspaceinc.com/#news): Investor-specific news and filings
+- [Investor events](https://investors.quantumspaceinc.com/#events): Upcoming investor events
+- [Investor leadership](https://investors.quantumspaceinc.com/#leadership): Leadership bios for investors
+
+## Recent News
+
+- [Quantum Space to go public via merger with Inflection Point Acquisition Corp. VI](https://www.quantumspaceinc.com/blog/quantum-space-a-leading-space-defense-and-orbital-mobility-company-to-go-public-via-merger-with-inflection-point-acquisition-corp-vi): SPAC merger announcement, June 2026
+- [Quantum Space awarded a Department of War contract](https://www.quantumspaceinc.com/blog/quantum-space-awarded-a-department-of-war-contract-to-advance-on-orbit-refueling-capabilities): On-orbit refueling capabilities, June 2026
+- [Quantum Space appoints Adarsh Parekh as Chief Financial Officer](https://www.quantumspaceinc.com/blog/quantum-space-appoints-adarsh-parekh-as-chief-financial-officer): CFO appointment, June 2026
+- [Quantum Space announces Tulsa manufacturing facility](https://www.quantumspaceinc.com/blog/quantum-space-announces-tulsa-manufacturing-facility-to-scale-ranger-spacecraft-production): New Ranger production site, May 2026
+- [Quantum Space selected by U.S. Space Force for Andromeda IDIQ Contract](https://www.quantumspaceinc.com/blog/quantum-space-selected-by-u-s-space-force-for-andromeda-idiq-contract): IDIQ vehicle for maneuverable, refuelable spacecraft in GEO, April 2026
+- [Quantum Space awarded DARPA LASSO contract](https://www.quantumspaceinc.com/blog/quantum-space-awarded-darpa-lasso-contract-to-advance-cislunar-capabilities): Cislunar capabilities, April 2026
+
+## Optional
+
+- [Full updates archive](https://www.quantumspaceinc.com/updates): Complete press release and perspectives history back to 2024
+- [Quantum Space acquires Phase Four's propulsion assets](https://www.quantumspaceinc.com/blog/quantum-space-acquires-phase-fours-multi--mode-propulsion-assets-to-boost-space-mobility): Propulsion technology acquisition, September 2025
+- [Quantum Space secures $40 million Series A extension](https://www.quantumspaceinc.com/blog/quantum-space-secures-40-million-series-a-extension-to-accelerate-development-of-maneuverable-spacecraft-for-national-defense): Funding round, June 2025

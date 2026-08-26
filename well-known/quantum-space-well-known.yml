@@ -1,0 +1,48 @@
+generated: '2026-08-26'
+method: probed
+source: live GET of /.well-known/* on every host Quantum Space serves
+note: >-
+  Every /.well-known/ path probed on both Quantum Space hosts returned HTTP 404 with an
+  88-byte Webflow error body reading "Invalid .well-known request" — a genuine negative,
+  not a single-page-app catch-all (the site's own 404 page is 20,327 bytes, so the two are
+  trivially distinguishable). No document was fetched or saved, so NO WellKnown and NO
+  SecurityTxt pointer is emitted in apis.yml. Recorded absence, not a presence.
+hit_count: 0
+soft_404_control:
+  path: /openapi.json
+  status: 404
+  bytes: 20327
+  note: the site 404 page; the /.well-known/ 404 bodies are 88 bytes, so the host is not a catch-all
+hosts:
+- host: https://www.quantumspaceinc.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://www.quantumspace.us
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404

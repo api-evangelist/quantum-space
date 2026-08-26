@@ -64,5 +64,44 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Quantum Space is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Quantum Space is a space defense and orbital mobility company headquartered in Rockville, Maryland,
+building **Ranger** — a maneuverable spacecraft designed to operate across LEO, MEO, GEO and cislunar
+orbits, with multi-mode chemical and electric propulsion, up to 12 km/s of delta-V, a 15-year
+on-station design life, on-orbit refueling in both directions, and a modular five-port payload
+architecture. It sells space domain awareness, satellite servicing, satellite life extension and
+on-orbit refueling to national security, civil and commercial customers.
+
+## Public API surface
+
+**None found.** Quantum Space publishes no developer program, no API reference, and no
+machine-readable API contract. Contract discovery was run against every host the company serves:
+
+| Probe | Host | Result |
+|---|---|---|
+| `/openapi.json`, `/swagger.json`, `/api-docs`, `/docs`, `/developers`, `/api` | www.quantumspaceinc.com, www.quantumspace.us | 404 (site 404 page) |
+| `/graphql` | www.quantumspaceinc.com | 404 |
+| `/.well-known/*` (security.txt, openid-configuration, oauth-authorization-server, api-catalog, ai-plugin.json, agent-card.json, agent.json) | both hosts | 404, 88-byte "Invalid .well-known request" |
+| `api.` / `docs.` / `developer.` / `status.` subdomains | quantumspaceinc.com, quantumspace.us | NXDOMAIN |
+| npm / PyPI first-party packages | — | none published |
+
+## What the company does publish
+
+- **`llms.txt`** — a real, hand-written llms.txt is served at both
+  [www.quantumspaceinc.com/llms.txt](https://www.quantumspaceinc.com/llms.txt) and
+  `www.quantumspace.us/llms.txt`. It opens by disambiguating the company ("It is not a quantum
+  computing company"), states Ranger's specifications, and links the company, investor-relations
+  and press surfaces. Saved verbatim to `llms/quantum-space-llms.txt`.
+- **A defect in that llms.txt.** Its four Investor Relations links point at
+  `https://investors.quantumspaceinc.com/`, which is **NXDOMAIN**. The live investor site is
+  `https://investors.quantumspace.us/` (HTTP 200), which is what the company's own homepage links to.
+  Four of the ~20 links an agent would follow from this llms.txt do not resolve.
+
+## Artifacts in this repo
+
+| Artifact | Method |
+|---|---|
+| `llms/quantum-space-llms.txt` | searched — provider-published, saved verbatim |
+| `well-known/quantum-space-well-known.yml` | probed — recorded absence (0 hits, no pointer emitted) |
+| `security/quantum-space-domain-security.yml` | probed — TLS 1.3, HSTS 1y, DMARC quarantine, no CAA, no DNSSEC, no SPF |
+| `plans/quantum-space-plans-pricing.yml` | searched — `plan_count: 0`, contract-vehicle sales motion |
+| `rate-limits/quantum-space-rate-limits.yml` | searched — `limit_count: 0`, no API to limit |
