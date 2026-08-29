@@ -14,6 +14,17 @@ description: 'Quantum Space is a space defense and orbital mobility company head
   Chairman Kam Ghaffarian and President Kerry Wisnosky. Quantum Space publishes no public
   developer program, API reference or machine-readable API contract; the only machine-readable
   artifact served from its own hosts is an llms.txt at the website root.'
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/69f390c049b974c2b472c40d/69f80fb70fcbd647826bf04b_1200x630%20Quantum.png
 url: https://raw.githubusercontent.com/api-evangelist/quantum-space/refs/heads/main/apis.yml
 x-type: company
