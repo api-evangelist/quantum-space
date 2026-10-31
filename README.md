@@ -64,44 +64,92 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Quantum Space is a space defense and orbital mobility company headquartered in Rockville, Maryland,
-building **Ranger** — a maneuverable spacecraft designed to operate across LEO, MEO, GEO and cislunar
-orbits, with multi-mode chemical and electric propulsion, up to 12 km/s of delta-V, a 15-year
-on-station design life, on-orbit refueling in both directions, and a modular five-port payload
-architecture. It sells space domain awareness, satellite servicing, satellite life extension and
-on-orbit refueling to national security, civil and commercial customers.
+Quantum Space is a space defense and orbital mobility company headquartered in Rockville, Maryland, building Ranger — a maneuverable spacecraft designed to operate across LEO, MEO, GEO and cislunar orbits. Per the company's own published material, Ranger carries up to 4,000 kg of storable propellant, uses multi-mode chemical and electric propulsion for up to 12 km/s of delta-V, is designed for a 15-year on-station operational life, supports on-orbit refueling in both directions, and exposes a modular five-port payload architecture. The company sells space domain awareness, satellite servicing, satellite life extension and on-orbit refueling to national security, civil and commercial customers, with engineering in Rockville, propulsion and integration in Hawthorne, California and Huntsville, Alabama, and spacecraft production in Tulsa, Oklahoma. Leadership includes CEO Jim Bridenstine (former NASA Administrator), Executive Chairman Kam Ghaffarian and President Kerry Wisnosky. Quantum Space publishes no public developer program, API reference or machine-readable API contract; the only machine-readable artifact served from its own hosts is an llms.txt at the website root.
 
-## Public API surface
+**Areas:** Space · Aerospace · Defense · Satellite · Spacecraft · Orbital Mobility · National Security · Space Domain Awareness · Company
 
-**None found.** Quantum Space publishes no developer program, no API reference, and no
-machine-readable API contract. Contract discovery was run against every host the company serves:
+## Quantum Space on APIs.io
 
-| Probe | Host | Result |
-|---|---|---|
-| `/openapi.json`, `/swagger.json`, `/api-docs`, `/docs`, `/developers`, `/api` | www.quantumspaceinc.com, www.quantumspace.us | 404 (site 404 page) |
-| `/graphql` | www.quantumspaceinc.com | 404 |
-| `/.well-known/*` (security.txt, openid-configuration, oauth-authorization-server, api-catalog, ai-plugin.json, agent-card.json, agent.json) | both hosts | 404, 88-byte "Invalid .well-known request" |
-| `api.` / `docs.` / `developer.` / `status.` subdomains | quantumspaceinc.com, quantumspace.us | NXDOMAIN |
-| npm / PyPI first-party packages | — | none published |
+Everything profiled for Quantum Space is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/quantum-space/](https://apis.io/providers/quantum-space/)** — or go straight to one of the APIs or properties below.
 
-## What the company does publish
+### Published properties
 
-- **`llms.txt`** — a real, hand-written llms.txt is served at both
-  [www.quantumspaceinc.com/llms.txt](https://www.quantumspaceinc.com/llms.txt) and
-  `www.quantumspace.us/llms.txt`. It opens by disambiguating the company ("It is not a quantum
-  computing company"), states Ranger's specifications, and links the company, investor-relations
-  and press surfaces. Saved verbatim to `llms/quantum-space-llms.txt`.
-- **A defect in that llms.txt.** Its four Investor Relations links point at
-  `https://investors.quantumspaceinc.com/`, which is **NXDOMAIN**. The live investor site is
-  `https://investors.quantumspace.us/` (HTTP 200), which is what the company's own homepage links to.
-  Four of the ~20 links an agent would follow from this llms.txt do not resolve.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Artifacts in this repo
+#### Security (1)
 
-| Artifact | Method |
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Quantum Space Domain Security](https://apis.io/security/quantum-space/quantum-space-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Quantum Space Plans Pricing](https://apis.io/plans/quantum-space/quantum-space-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Quantum Space Rate Limits](https://apis.io/rate-limits/quantum-space/quantum-space-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.quantumspaceinc.com/)
+- [Blog](https://www.quantumspaceinc.com/updates)
+
+## API Evangelist rating
+
+**Kin Score 4.6** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
 |---|---|
-| `llms/quantum-space-llms.txt` | searched — provider-published, saved verbatim |
-| `well-known/quantum-space-well-known.yml` | probed — recorded absence (0 hits, no pointer emitted) |
-| `security/quantum-space-domain-security.yml` | probed — TLS 1.3, HSTS 1y, DMARC quarantine, no CAA, no DNSSEC, no SPF |
-| `plans/quantum-space-plans-pricing.yml` | searched — `plan_count: 0`, contract-vehicle sales motion |
-| `rate-limits/quantum-space-rate-limits.yml` | searched — `limit_count: 0`, no API to limit |
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 0.0 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/quantum-space/](https://apis.io/providers/quantum-space/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Quantum Space: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/quantum-space/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
